@@ -36,9 +36,14 @@ form {
   position: relative;
 }
 form::after {
-  content: "";
-  width: 6rem;
-  height: 6rem;
+  content: "Formulaire";
+  line-height: 6;
+  letter-spacing: 1px;
+  text-align: center;
+  color: blue;
+  font-weight: bold;
+  width: 7rem;
+  height: 7rem;
   background: linear-gradient(65deg, #dfe9f4, #accbee);
   border-radius: 15rem;
   position: absolute;
@@ -103,6 +108,22 @@ p {
   border-radius: 50px;
   visibility: hidden;
   transition: 0.3s;
+}
+/* p barre */
+.pRed {
+  background: red;
+  width: 33%;
+  visibility: visible;
+}
+.pBlue {
+  background: #16d9e7;
+  width: 67%;
+  visibility: visible;
+}
+.pGreen {
+  width: 100%;
+  background: #5ef9a4;
+  visibility: visible;
 }
 
 /* ERROR */

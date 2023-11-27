@@ -39,11 +39,16 @@ form {
 }
 
 form:after {
-  content: "";
+  content: "Formulaire";
+  letter-spacing: 1px;
+  text-align: center;
+  color: #00f;
   background: linear-gradient(65deg, #dfe9f4, #accbee);
   border-radius: 15rem;
-  width: 6rem;
-  height: 6rem;
+  width: 7rem;
+  height: 7rem;
+  font-weight: bold;
+  line-height: 6;
   position: absolute;
   top: -30px;
   left: 50%;
@@ -112,6 +117,24 @@ p {
   height: 6px;
   margin: -2px 0 2px;
   transition: all .3s;
+}
+
+.pRed {
+  visibility: visible;
+  background: red;
+  width: 33%;
+}
+
+.pBlue {
+  visibility: visible;
+  background: #16d9e7;
+  width: 67%;
+}
+
+.pGreen {
+  visibility: visible;
+  background: #5ef9a4;
+  width: 100%;
 }
 
 .error input {
