@@ -576,6 +576,39 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 
 },{}],"aR1JP":[function(require,module,exports) {
 var _stylesCss = require("./styles.css");
+const inputs = document.querySelectorAll('input[type="text"], input[type="password"] ');
+// CHECK
+const pseudoCheck = (value)=>{
+    console.log(value);
+};
+const emailCheck = (value)=>{
+    console.log(value);
+};
+const passwordCheck = (value)=>{
+    console.log(value);
+};
+const confirmCheck = (value)=>{
+    console.log(value);
+};
+inputs.forEach((input)=>{
+    input.addEventListener("input", (e)=>{
+        switch(e.target.id){
+            case "pseudo":
+                pseudoCheck(e.target.value);
+                break;
+            case "email":
+                emailCheck(e.target.value);
+                break;
+            case "password":
+                passwordCheck(e.target.value);
+                break;
+            case "confirm":
+                confirmCheck(e.target.value);
+                break;
+            default:
+        }
+    });
+});
 
 },{"./styles.css":"lW6qc"}],"lW6qc":[function() {},{}]},["iZQ9B","aR1JP"], "aR1JP", "parcelRequirebaba")
 
